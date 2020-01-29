@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body  {
+    background: #e6ecf0;
+    font-family: 'Helvetica Neue', 'Helvetica' , Arial, Helvetica, sans-serif;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smooth: antialiased !important;
+}
+
+htm, body, #app {
+    height: 100%;
+    margin: 0;
+}
+
+input, button {
+    outline: 0;
+}
+
+/*permite que a tela tenha um tamanho máximo, com margem*/
+.content {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/*......................................header#main-header */
+
+header#main-header {
+    height: 46px;
+    background: #FFF;
+
+    /*Gera a linha em baixo da #main-header*/
+    box-shadow: 0 1px 1px rgba(0,0,0,0.25);
+}
+
+/*Alinhamento principal dos itens da main-header*/
+header#main-header .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/*Não precisou*/
+/*header#main-header .content .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    background: #FF0000;
+}*/
+
+header#main-header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header#main-header nav ul li {
+    display: flex;
+    align-items: center;
+
+    font-size: 13px;
+    color: #667580;
+    font-weight: bold;
+
+    margin-left: 30px; /*distanciar os elementos da ul*/
+}
+
+header#main-header nav ul li:first-child {
+    margin: 0; /*remove a distância do primeiro item*/
+}
+
+header#main-header nav ul li img {
+    margin-right: 7px;
+    width:20px;
+    /*max-width: 20px; *//*tamanho máximo dos ícones*/
+}
+
+/*DIV do lado direito*/
+header#main-header div.side
+{
+    display: flex;
+}
+
+/*input de search ... MASSA */
+header#main-header div.side input {
+    width: 220px;
+    /*background: #f5f8fa;*/
+    border: 1px solid #E6ECF0;
+    height: 34px;
+    padding: 0 35px 0 12px;
+    border-radius: 16px;
+    color: #667581;
+    font-size: 12px;
+
+    /*Imagem dentro do input...*/
+    /*background: #f5f8fa url('/images/search.svg') no-repeat 175px center;*/
+
+    background-color: #f5f8fa;
+    background-image: url('/images/search.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50% 50%; /*diminui a imagem*/
+    background-position-x: 140px;
+}
+
+/*Imagem do Avatar*/
+header#main-header div.side img {
+    height: 34px;
+    width:35px;
+    border-radius: 50%;
+
+    margin: 0 15px;
+}
+
+/*Botão Tweet*/
+header#main-header div.side button {
+    height: 34px;
+    background: #3bb9e3;
+
+    /*alinha texto no centro*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 90px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF;
+    border: 0;
+    border-radius: 16px;
+}
+
+/*......................................header#main-header */
+
+
+
+
+
+
+
+
+/* estilos de exercício ..................... */
+#app {
+    display: flex;
+    flex-direction: row;
+    /*flex-direction: column; */
+
+    /*
+    align-items: center; 
+    justify-content: center;
+    */
+    /*flex-wrap: wrap;*/
+
+    align-items: center;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.box {
+    width: 250px;
+    height: 60px;
+    background: #F00;
+    margin: 5px;
+
+    /*flex-grow: 1;*/ /*se estica */
+    /*flex-shrink: 0;*/ /* encolhe */
+
+    /*ou o padrao usado...*/
+    /*flex: 1;*/
+}
+
+.red {
+    background: #FF0000;
+    order: 1;
+}
+
+.green {
+    background: #00FF00;
+    order: 2;
+}
+
+.blue {
+    background: #0000FF;
+    order: 0;
+}
+
