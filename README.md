@@ -13,7 +13,7 @@ Estudos para criar um design clone do twitter, para estudos do flexbox.
 
 ![Hero Image with Logo](./.github/sc01.png)
 
-## TODO;
+## TODO:
 - responsividade
 
 ## VSCode: 
