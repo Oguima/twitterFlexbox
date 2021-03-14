@@ -101,10 +101,10 @@ header#main-header div.side input {
     font-size: 12px;
 
     /*Imagem dentro do input...*/
-    /*background: #f5f8fa url('/images/search.svg') no-repeat 175px center;*/
+    /*background: #f5f8fa url('./images/search.svg') no-repeat 175px center;*/
 
     background-color: #f5f8fa;
-    background-image: url('/images/search.svg');
+    background-image: url('./images/search.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 50% 50%; /*diminui a imagem*/
